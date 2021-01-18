@@ -1,0 +1,27 @@
+@keyframes reply-ani {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.batman-reply {
+  animation: reply-ani 3s linear forwards;
+}
+.joker-reply {
+  animation: reply-ani 2s linear forwards;
+}

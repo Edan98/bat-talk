@@ -1,0 +1,74 @@
+.user-component {
+  display: flex;
+  position: relative;
+  justify-content: flex-start;
+  align-items: center;
+}
+.user-component__img {
+  width: 100px;
+  height: 100px;
+  border-radius: 40px;
+  margin-right: 20px;
+}
+.user-component__text {
+  display: flex;
+  flex-direction: column;
+}
+.user-component__title {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: silver;
+}
+.user-component__subtitle {
+  font-weight: 600;
+  color: rgba(121, 121, 121, 0.4);
+}
+.user-component__signature {
+  position: absolute;
+  right: 0px;
+}
+.user-component__signature img {
+  width: 70px;
+  height: 70px;
+}
+
+.user-component__icon {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: silver;
+}
+.chats-page .user-component {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.chats-page .user-component__img {
+  width: 70px;
+  height: 70px;
+  border-radius: 20px;
+}
+.chats-page .user-component__icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  position: absolute;
+  right: 0px;
+  top: 6px;
+  font-size: 25px;
+}
+.chats-page .user-component__icon-time {
+  margin-bottom: 10px;
+}
+.chats-page .user-component__icon-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: red;
+  font-size: 20px;
+}

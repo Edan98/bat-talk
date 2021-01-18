@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>BAT NETWORK</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>20:00</span>
+      </div>
+      <div class="status-bar__column">
+        <span>100%</span>
+        <i class="fas fa-battery-three-quarters fa-lg"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+    <header class="login-header">
+      <img class="login-header__img" src="img/batman-logo.png" />
+      <span class="login-header__title">BAT TALK</span>
+    </header>
+    <form class="login-page" action="friends.html">
+      <input required class="login-page__input" type="text" placeholder="ID" />
+      <input
+        required
+        class="login-page__input"
+        minlength="10"
+        type="password"
+        placeholder="Password"
+      />
+      <input class="login-page__submit" type="submit" value="Log In" />
+    </form>
+    <div id="no-mobile">
+      <img
+        src="https://s2.best-wallpaper.net/wallpaper/iphone/1904/Batman-superhero-art-picture-black-background_iphone_1080x1920.jpg"
+      />
+      <span>Your Screen is too Big</span>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

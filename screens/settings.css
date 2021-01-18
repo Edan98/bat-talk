@@ -1,0 +1,36 @@
+.settings__setting {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  padding: 25px 0px;
+  border-bottom: 1px solid silver;
+  color: silver;
+}
+
+.settings__setting i {
+  font-size: 30px;
+  margin-right: 18px;
+}
+.settings__setting:first-child i {
+  margin-right: 50px;
+}
+.settings__setting:nth-child(2) i {
+  margin-right: 55px;
+}
+
+.settings__setting:last-child i {
+  margin-right: 44px;
+}
+.settings__setting-column {
+  font-size: 30px;
+}
+.settings__setting-column:last-child {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.settings-list {
+  padding-top: 120px;
+}

@@ -1,0 +1,206 @@
+.friends-display__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  size: 20px;
+  padding: 12px 0px;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: rgba(192, 192, 192, 0.5);
+  margin-bottom: 10px;
+}
+.friends-display__link span {
+  margin-left: 10px;
+  margin-right: 5px;
+  font-weight: 600;
+}
+.friends-page {
+  display: flex;
+  flex-direction: column;
+  padding: 0 25px;
+}
+
+.friends-channel__header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  padding: 20px 0px;
+  border-top: 2px solid var(--shadow-silver);
+  color: var(--shadow-silver);
+}
+
+.friends-channel__header span {
+  font-size: 25px;
+}
+.friends-channel__list .user-component__img {
+  width: 60px;
+  height: 60px;
+}
+.friends-channel__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.joker {
+  color: #009900;
+}
+
+.friends-channel__list .user-component {
+  margin-bottom: 35px;
+}
+.arkham-knight {
+  color: rgba(0, 0, 128, 0.8);
+}
+.scarecrow {
+  color: #964b00;
+}
+.harley-quinn {
+  color: hotpink;
+}
+.deathstroke {
+  color: rgb(235, 102, 23);
+}
+
+@keyframes hideSplashScreen {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@keyframes connect-ani {
+  0% {
+    color: black;
+    transform: translateY(0);
+  }
+  50% {
+    opacity: 1;
+    color: white;
+    transform: translateY(-20px);
+  }
+  75% {
+    color: black;
+    transform: translateY(0);
+  }
+  80% {
+    color: black;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+    color: black;
+    transform: translateY(0);
+  }
+}
+@keyframes logo-ani {
+  0% {
+    transform: translate(0);
+  }
+  50% {
+    transform: translateY(-200px);
+  }
+  100% {
+    transform: translateY(-200px) scale(1.5);
+  }
+}
+.connecting {
+  display: flex;
+}
+.connecting span {
+  font-size: 60px;
+  font-weight: 600;
+  margin-right: 10px;
+  animation: connect-ani 2s ease-in-out infinite;
+}
+.connecting span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.connecting span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+.connecting span:nth-child(4) {
+  animation-delay: 0.6s;
+}
+.connecting span:nth-child(5) {
+  animation-delay: 0.8s;
+}
+.connecting span:nth-child(6) {
+  animation-delay: 1s;
+}
+.connecting span:nth-child(7) {
+  animation-delay: 1.2s;
+}
+.connecting span:nth-child(8) {
+  animation-delay: 1.4s;
+}
+.connecting span:nth-child(9) {
+  animation-delay: 1.6s;
+}
+.connecting span:last-child {
+  animation-delay: 1.8s;
+}
+#splash-screen {
+  background-color: #333333;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  animation: hideSplashScreen 10s linear forwards;
+}
+/* --------------------------
+  Keyframes
+--------------------------- */
+@keyframes offset {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fill-it {
+  100% {
+    fill: black;
+  }
+}
+
+@keyframes fill-outer {
+  100% {
+    fill: black;
+  }
+}
+@keyframes UPsizeandtrans {
+}
+
+/* --------------------------
+  SVG Styles
+--------------------------- */
+
+.logo {
+  stroke: black;
+  stroke-width: 2;
+  stroke-dasharray: 1040;
+  stroke-dashoffset: 1040;
+
+  animation: offset 3s linear forwards, fill-it 0.8s 4s forwards;
+}
+
+.outer {
+  fill: transparent;
+  animation: fill-outer 4s 5s forwards;
+}
+.wrapper {
+  animation: logo-ani 7s ease-in-out forwards;
+}

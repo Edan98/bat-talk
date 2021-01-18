@@ -1,0 +1,49 @@
+.more-page .user-component {
+  position: relative;
+}
+
+.fa-comment-alt {
+  position: absolute;
+  right: 0px;
+  color: silver;
+}
+
+.find-menu {
+  padding-top: 25px;
+  padding-bottom: 150px;
+}
+
+.more-page .recommended-friends span {
+  font-size: 30px;
+}
+.suggestion-menu {
+  display: flex;
+  border-bottom: none;
+  margin-bottom: 15px;
+}
+
+.suggestion-menu__title {
+  padding-top: 15px;
+  border-top: 2px solid silver;
+  margin-bottom: 15px;
+}
+.suggestion-menu__column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.suggestion-menu__column span:first-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 65px;
+  height: 65px;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+.suggestion-menu__column span:last-child {
+  margin-top: 10px;
+  font-size: 20px;
+}

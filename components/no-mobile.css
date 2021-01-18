@@ -1,0 +1,29 @@
+#no-mobile {
+  position: absolute;
+  z-index: 99;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  top: 0;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--shadow-silver);
+}
+#no-mobile img {
+  width: 100vw;
+  height: 100vh;
+}
+#no-mobile span {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  font-size: 40px;
+  font-weight: 600;
+  color: silver;
+}
+
+@media screen and (min-width: 355px) and (max-width: 900px) {
+  #no-mobile {
+    display: none;
+  }
+}
